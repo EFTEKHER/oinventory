@@ -57,7 +57,7 @@ function Navbar() {
           if (!notif.readBy?.includes(user.email)) {
             toast.info(notif.message, {
               icon: getNotificationIcon(notif.type),
-              autoClose: 5000,
+              autoClose: true,
               hideProgressBar: true,
             });
           }
