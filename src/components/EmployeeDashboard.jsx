@@ -4,8 +4,8 @@ import LeaveRequest from "./Employee/LeaveRequest";
 import InventoryManagementEmployee from "./Employee/InventoryManagement";
 import InventoryList from "./InventoryList";
 import OfficeView from "./Employee/OfficeView";
-import Product from "./Product";
-import Supplier from "./Supplier";
+import EmployeeProduct from "./EmployeeProduct";
+import EmployeeSupplier from "./EmployeeSupplier";
 import { motion, AnimatePresence } from "framer-motion";
 import Chatbot from "./Chatbot";
 function EmployeeDashboard() {
@@ -15,8 +15,8 @@ function EmployeeDashboard() {
     { id: "inventory", label: "Inventory", component: <InventoryManagementEmployee /> },
     { id: "inventorylist", label: "Inventory List", component: <InventoryList /> },
     { id: "officeView", label: "Office", component: <OfficeView /> },
-    { id: "product", label: "Products", component: <Product /> },
-    { id: "supplier", label: "Suppliers", component: <Supplier /> },
+    { id: "employeeProduct", label: "Product", component: <EmployeeProduct /> }, // Add Employee Product component here
+    { id: "employeeSupplier", label: "Supplier", component: <EmployeeSupplier /> }, // Add Employee Supplier component here
     { id: "chatbot", label: "Chatbot", component: <Chatbot /> }, // Add Chatbot component here
 
   ];
