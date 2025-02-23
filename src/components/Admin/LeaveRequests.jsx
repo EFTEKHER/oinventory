@@ -40,7 +40,7 @@ function LeaveRequests() {
 
       toast.success(`Leave request ${status}!`, {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: true,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -50,7 +50,7 @@ function LeaveRequests() {
       console.error(error);
       toast.error(error.message, {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: true,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -64,7 +64,7 @@ function LeaveRequests() {
       await deleteDoc(doc(db, 'leaveRequests', id));
       toast.success('Leave request deleted!', {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: true,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -74,7 +74,7 @@ function LeaveRequests() {
       console.error(error);
       toast.error(error.message, {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: true,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
