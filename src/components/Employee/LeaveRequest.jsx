@@ -44,7 +44,7 @@ function LeaveRequest() {
       setReason('');
       toast.success('Leave request submitted successfully!', {
         position: "top-right",
-        autoClose: 3000,
+        autoClose: true,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -55,7 +55,7 @@ function LeaveRequest() {
       console.error(error);
       toast.error(`Error submitting request: ${error.message}`, {
         position: "top-right",
-        autoClose: 4000,
+        autoClose: true,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
