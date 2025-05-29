@@ -44,7 +44,7 @@ const Footer = () => {
             </p>
             <div className="hidden md:block h-4 w-px bg-gray-300"></div>
             <p className="text-gray-600 text-sm">
-              © {currentYear} OfficeHub designed by Mujiba Shaima . All rights reserved.
+              © {currentYear} OfficeHub designed by Eftekher Ali Efte . All rights reserved.
             </p>
           </div>
         </div>
